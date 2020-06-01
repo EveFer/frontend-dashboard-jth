@@ -1,0 +1,14 @@
+@import '../../../../styles/app.scss';
+
+.content {
+    &.scroll{
+        background-color: inherit;
+        width: 100%;
+        max-height: calc(100vh - 122px);
+        height: calc(100vh - 122px);
+        overflow-y: scroll;
+      }
+    &.scroll::-webkit-scrollbar {
+        display: none;
+      }
+}

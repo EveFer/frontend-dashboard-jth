@@ -1,0 +1,171 @@
+@import '../../../../../styles/app.scss';
+
+
+.info-user {
+    border-radius: 20px;
+
+    .user-info-card {
+
+        .user-data-card {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .user-data {
+            color: #616575;
+            font-size: 20px;
+            .user-name {
+                font-weight: 200;
+            }
+            .user-last-name {
+                font-weight: 200;
+            }
+            .user-email {
+                font-weight: 200;
+            }
+        }
+    }
+}
+
+.detail-subscription-wrapper {
+    .title{
+        color: $black;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .detail-subscription {
+        display: flex;
+        justify-content: space-around;
+        color: #616575;
+        .detail-keys {
+            font-weight: 700;
+        }
+
+        .detail-values {
+            font-weight: 300;
+        }
+    }
+    .create-subscription {
+        display: flex;
+        justify-content: center;
+        .btn-add {
+            width: 50%;
+            height: 40px;
+            border-radius: 50px;
+            font-size:12px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            background-color: $green-2;
+            color: $white;
+            border: none;
+            outline:none;
+
+            &:hover {
+                background-color: $green-3;
+            }
+        }
+    }
+}
+
+.form-subscription {
+    label {
+        color: $gray-2;
+        font-weight: 300;
+    }
+
+    input {
+        border-radius: 25px;
+        font-size: 15px;
+        color: $gray-2;
+        font-weight: 200;
+        background-color: $white;
+        // border: none;
+        margin-bottom: 25px;
+
+        &:focus {
+            outline:0px;
+            outline-width: 0 !important;
+            box-shadow: none;
+            text-indent: 5px;
+        }
+
+        &::placeholder {
+            color: $gray-1;
+            font-size: 12px;
+            font-weight: 100;
+            text-indent: 5px;
+        }
+
+        &::-webkit-inner-spin-button  {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    select {
+        border-radius: 25px;
+        font-size: 15px;
+        color: $gray-2;
+        font-weight: 200;
+        background-color: $white;
+        margin-bottom: 25px;
+
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+        background-repeat: no-repeat, repeat;
+        background-position: right .7em top 50%, 0 0;
+        background-size: .65em auto, 100%;
+
+        &:focus {
+            outline:0px;
+            outline-width: 0 !important;
+            box-shadow: none;
+        }
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        option {
+            font-weight: 100;
+        }
+    }
+
+    .btn-save {
+        width: 40%;
+        height: 40px;
+        border-radius: 50px;
+        font-size:12px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background-color: $green-2;
+        color: $white;
+        border: none;
+        outline:none;
+
+        &:hover {
+            background-color: $green-3;
+        }
+    }
+
+    .btn-cancel {
+        width: 40%;
+        height: 40px;
+        border-radius: 50px;
+        font-size:12px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        background-color: $red-2;
+        color: $white;
+        border: none;
+        outline:none;
+
+        &:hover {
+            background-color: $red;
+        }
+    }
+}

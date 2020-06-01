@@ -1,0 +1,33 @@
+@import '../../styles/app.scss';
+
+.no-menu.wrapper-menu-sidebar {
+    margin-left: calc( 100% - 200%);
+    
+    @include medium {
+        margin-left: -16rem;
+    }
+
+    @include large {
+        margin-left: -22rem;
+    }
+    @include extraLarge {
+        margin-left: -23rem;
+    }
+}
+
+.wrapper-menu-sidebar {
+    transition: margin-left .5s ease ;
+}
+
+.content {
+    &.scroll{
+        background-color: inherit;
+        width: 100%;
+        max-height: calc(100vh - 122px);
+        height: calc(100vh - 122px);
+        overflow-y: scroll;
+      }
+    &.scroll::-webkit-scrollbar {
+        display: none;
+      }
+}

@@ -1,0 +1,41 @@
+@import '../../../../styles/app.scss';
+
+.table-users {
+    .search-wrapper {
+        position: relative;
+        i{
+            position: absolute;
+            font-size:20px;
+            top: 10px;
+            left: 10px;
+            opacity: .5;
+        }
+        .search-input {
+            border-radius: 15px;
+            width: 50%;
+            height: 40px;
+            font-size: 15px;
+            color: $gray-2;
+            font-weight: 200;
+            background-color: $white;
+            // border: none;
+            margin-bottom: 25px;
+    
+            &:focus {
+                outline:0px;
+                outline-width: 0 !important;
+                box-shadow: none;
+                text-indent: 40px
+            }
+    
+            &::placeholder {
+                color: $gray-1;
+                font-size: 15px;
+                font-weight: 200;
+                text-indent: 40px
+            }
+    
+        }
+    }
+
+}
