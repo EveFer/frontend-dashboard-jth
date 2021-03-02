@@ -1,4 +1,4 @@
-const URL_BASE = 'http://localhost:3003/'
+const URL_BASE = 'https://api-toroto.mybluemix.net/'
 
 const ENDPOINT_USERS = `${URL_BASE}users`
 
